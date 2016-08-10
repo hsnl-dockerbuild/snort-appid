@@ -1,7 +1,6 @@
-# snort-appi
-
-Run the Snort with Appid
-and it will creat the output named appstats-u2.xxxx
+# Snort-appid
+Run the Snort with Appid  
+and it will creat the output named appstats-u2.xxxx  
 ```
 $ /usr/local/bin/snort -A console -c /etc/snort/snort.conf -i eth0
 ```
