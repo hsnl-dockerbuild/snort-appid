@@ -31,13 +31,13 @@ RUN wget https://www.snort.org/downloads/snort/daq-${DAQ_VERSION}.tar.gz \
     && cd daq-${DAQ_VERSION} \
     && ./configure; make; make install
 
-ENV SNORT_VERSION 2.9.8.3
+ENV SNORT_VERSION 2.9.9.0
 RUN wget https://www.snort.org/downloads/snort/snort-${SNORT_VERSION}.tar.gz \
     && tar xvfz snort-${SNORT_VERSION}.tar.gz \
     && cd snort-${SNORT_VERSION} \
     && ./configure --enable-sourcefire --enable-open-appid; make; make install
 
-ENV APPID_VERSION 3934
+ENV APPID_VERSION 5048
 RUN wget https://snort.org/downloads/openappid/${APPID_VERSION} -O snort-openappid.tar.gz \
     && tar -xvzf snort-openappid.tar.gz
 
